@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+::selection{
+  color: #ffff;
+  background: rgb(73, 182, 232);
+}
+body{
+  width: 100%;
+  height: 100vh;
+  padding: 10px;
+  /* background: linear-gradient(to bottom, #ea68d2 0%, #49e891 100%); */
+  background-image: url('images/paint.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+
+}
+.wrapper{
+  /* background: rgb(153, 239, 205); */
+  background-image: linear-gradient(rgb(12, 43, 69), rgb(39, 95, 69));
+  max-width: 400px;
+  width: 100%;
+  margin: 120px auto;
+  padding: 30px;
+  border-radius: 7px;
+  box-shadow: 0px 13px 17px rgba(0,0,0,0.1);
+}
+.wrapper header{
+  font-size: 30px;
+  font-weight: 600;
+  color: white;
+}
+.wrapper .inputField{
+  margin: 15px 0;
+  width: 100%;
+  display: flex;
+  height: 55px;
+}
+.inputField input{
+  width: 80%;
+  height: 100%;
+  outline: none;
+  border-radius: 3px;
+  border: 2px solid rgb(172, 32, 120);
+  font-size: 20px;
+  padding-left: 13px;
+  transition: all 0.25s ease;
+}
+.inputField input:focus{
+  border-color: #49e881;
+}
+.inputField button{
+  width: 50px;
+  height: 100%;
+  border: none;
+  color: #fff;
+  margin-left: 7px;
+  font-size: 25px;
+  outline: none;
+  background: #8E49E8;
+  cursor: pointer;
+  border-radius: 4px;
+  opacity: 0.8;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+.inputField button:hover,
+.footer button:hover{
+  background: #0bac00;
+}
+.inputField button.active{
+  opacity: 1;
+  pointer-events: auto;
+}
+.wrapper .todoList{
+  max-height: 250px;
+  overflow-y: auto;
+}
+.todoList li{
+  position: relative;
+  list-style: none;
+  margin-bottom: 10px;
+  background: #f2f2f2;
+  border-radius: 4px;
+  padding: 13px 17px;
+  cursor: default;
+  overflow: hidden;
+  word-wrap: break-word;
+}
+.todoList li .icon{
+  position: absolute;
+  right: -45px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #e74c3c;
+  width: 55px;
+  text-align: center;
+  color: #fff;
+  padding: 12px 17px;
+  border-radius: 0 3px 3px 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.todoList li:hover .icon{
+  right: 0px;
+}
+.wrapper .footer{
+  display: flex;
+  width: 100%;
+  margin-top: 30px;
+  align-items: center;
+  justify-content: space-between;
+  color: rgb(164, 235, 165);
+ 
+}
+.footer button{
+  padding: 5px 14px;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  font-weight: 450;
+  font-size: 20px;
+  margin-left: 5px;
+  background: #2d203d;
+  cursor: pointer;
+  user-select: none;
+  opacity: 0.8;
+  pointer-events: none;
+  transition: all 0.25s ease;
+}
+.footer button.active{
+  opacity: 1;
+  pointer-events: auto;
+}
+#home{
+  display: flex;
+  flex-direction: column;
+  padding:3px 200px;
+  height: 150px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* #home::before{ 
+  content: "";
+  position: absolute;
+  background: url('../bg1.jpg') no-repeat center center/cover;
+  height: 642px;
+  top:0px;
+  left:0px;
+  width: 100%;
+  z-index: -1;
+  opacity:0.89;
+} */
+
+#home h1{
+  color:white;
+  text-align: center;
+  font-family: 'Bree Serif', serif;
+}
+
+#home p{
+  color:white;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: 'Bree Serif', serif;
+}
+
+#home2::before{ 
+  content: "";
+  position: absolute;
+  background: url('../bg1.jpg') no-repeat center center/cover;
+  height: 642px;
+  top:0px;
+  left:0px;
+  width: 100%;
+  z-index: -1;
+  opacity:0.89;
+}
+
+#home2 h1{
+  color:white;
+  text-align: center;
+  font-family: 'Bree Serif', serif;
+}
+
+#home2 p{
+  color:white;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: 'Bree Serif', serif;
+}
